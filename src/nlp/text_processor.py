@@ -43,6 +43,9 @@ class TextProcessor:
             abbr_patterns = []
 
             for abbr in self.lemmatized_laws["abbreviation"].unique():
+                if not abbr:
+                    continue
+
                 # Create a literal match pattern but also take care of - in words
                 # as tokenizer might split the words apart.
                 if len(abbr) > 2 and abbr.lower() not in ["ter"]:
@@ -86,7 +89,11 @@ class TextProcessor:
 
             # Second, add document title patterns
             title_patterns = self.get_entity_ruler_title_patterns(
-                self.lemmatized_laws["document_title_lemmatized"].to_list()
+                [
+                    x
+                    for x in self.lemmatized_laws["document_title_lemmatized"].to_list()
+                    if x
+                ]
             )
 
         patterns = (
