@@ -127,7 +127,7 @@ class TextProcessor:
         span_ruler.add_patterns(SPAN_PATTERNS)
 
         # # Add post-processing components
-        # self.nlp.add_pipe("extract_laws_nastevanje")
+        self.nlp.add_pipe("extract_laws_nastevanje")
         # self.nlp.add_pipe("extract_laws_closest")
 
     def get_entity_ruler_title_patterns(self, lemmatized_titles):
