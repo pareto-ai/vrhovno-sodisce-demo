@@ -34,6 +34,8 @@ class SpanType(str, Enum):
     FEAT_PRED_UTEMELJITVIJO = "se nahaja pred utemeljitvijo"
     FEAT_OPOMBE = "opombe"
     FEAT_V_PRAVNI_PODLAGI = "v pravni podlagi"
+    STAVEK_Z_ZAKONOM = "stavek_z_zakonom"
+    POMEMBEN_IZSEK_BESEDILA = "pomemben_izsek_besedila"
 
     @staticmethod
     def is_navedba_zakona(span):

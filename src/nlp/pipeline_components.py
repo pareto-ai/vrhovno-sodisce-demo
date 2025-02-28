@@ -48,71 +48,73 @@ def extract_laws_nastevanje(doc):
     return doc
 
 
-@Language.component("extract_laws_closest")
-def extract_laws_closest(doc):
-    """
-    Searches the document for lone EntType.CLEN, which have no neighboring EntType.
+@Language.component("merge_laws")
+def merge_laws(doc):
+    spans = [span for span in doc.spans["spans"]]
 
-    DOC_ABBR and finds the closest mention to the left and to the right of the lone EntType.CLEN.
-    """
-    laws = [
-        ent
-        for ent in doc.ents
-        if ent.label_ in [EntType.DOC_ABBR.value, EntType.DOC_TITLE.value]
-    ]
+    spans_filtered = []
+    while spans:
+        s = spans.pop()
 
-    ents = [
-        ent
-        for ent in doc.ents
-        if (
-            ent.label_ in [EntType.CLEN.value, EntType.CLEN_LEFT.value]
-            and (
-                ent.start > 0
-                and doc[ent.start - 1].ent_type_
-                not in [EntType.DOC_ABBR.value, EntType.DOC_TITLE.value]
-            )
-            and (
-                ent.end < len(doc) - 1
-                and doc[ent.end].ent_type_
-                not in [EntType.DOC_ABBR.value, EntType.DOC_TITLE.value]
-            )
+        is_law_contained = False
+        for other in spans_filtered:
+            if (
+                s.label_ == SpanType.NAVEDBA_ZAKONA.value
+                and other.label_ == SpanType.NAVEDBA_ZAKONA.value
+            ) and (s.start >= other.start and s.end <= other.end):
+                is_law_contained = True
+
+        if is_law_contained:
+            continue
+
+        spans_filtered.append(s)
+
+    doc.spans["spans"] = spans_filtered
+    # doc.spans["spans"].append(s)
+
+    return doc
+
+
+def _overlaps_with_margin(span1, span2, margin=150):
+    return span1[0] <= span2[1] + margin and span1[1] >= span2[0] - margin
+
+
+@Language.component("extract_sents_with_laws")
+def extract_sents_with_laws(doc):
+    extended_sentences = []
+    for _sent in doc.sents:
+        ents = [ent.label_ for ent in _sent.ents]
+        if (EntType.CLEN.value in ents or EntType.CLEN_LEFT.value in ents) and (
+            EntType.DOC_ABBR.value in ents or EntType.DOC_TITLE.value in ents
+        ):
+            s = Span(doc, _sent.start, _sent.end, SpanType.STAVEK_Z_ZAKONOM.value)
+            doc.spans["spans"].append(s)
+
+            TOKENS_EXTEND = 50
+            start = max(_sent.start - TOKENS_EXTEND, 0)
+            end = min(_sent.end + TOKENS_EXTEND, len(doc))
+            extended_sentences.append((start, end))
+
+    extended_sentences_merged = []
+    while extended_sentences:
+        (start, end) = extended_sentences.pop()
+
+        for i, (other_start, other_end) in enumerate(extended_sentences_merged):
+            if _overlaps_with_margin((start, end), (other_start, other_end)):
+                _ = extended_sentences_merged.pop(i)
+
+                start = min(start, other_start)
+                end = max(end, other_end)
+                break
+        extended_sentences_merged.append((start, end))
+
+    for start, end in extended_sentences_merged:
+        s = Span(
+            doc,
+            start,
+            end,
+            SpanType.POMEMBEN_IZSEK_BESEDILA.value,
         )
-    ]
-
-    for ent in ents:
-        left_law = sorted([law for law in laws if law.start < ent.start])
-        right_law = sorted([law for law in laws if law.start >= ent.end])
-
-        span = None
-        if left_law and right_law:
-            right_law = right_law[0]
-            left_law = left_law[-1]
-
-            if right_law.start - ent.end < ent.start - left_law.start:
-                span = Span(
-                    doc, ent.start, right_law.end, SpanType.NAVEDBA_ZAKONA_RIGHT.value
-                )
-            else:
-                span = Span(
-                    doc, left_law.start, ent.end, SpanType.NAVEDBA_ZAKONA_LEFT.value
-                )
-        elif left_law:
-            left_law = left_law[-1]
-
-            if not right_law:
-                span = Span(
-                    doc, left_law.start, ent.end, SpanType.NAVEDBA_ZAKONA_LEFT.value
-                )
-
-        elif right_law:
-            right_law = right_law[0]
-
-            if not left_law:
-                span = Span(
-                    doc, ent.start, right_law.end, SpanType.NAVEDBA_ZAKONA_RIGHT.value
-                )
-
-        if span:
-            doc.spans["spans"].append(span)
+        doc.spans["spans"].append(s)
 
     return doc

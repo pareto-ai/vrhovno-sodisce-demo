@@ -128,7 +128,8 @@ class TextProcessor:
 
         # # Add post-processing components
         self.nlp.add_pipe("extract_laws_nastevanje")
-        # self.nlp.add_pipe("extract_laws_closest")
+        self.nlp.add_pipe("merge_laws")
+        self.nlp.add_pipe("extract_sents_with_laws")
 
     def get_entity_ruler_title_patterns(self, lemmatized_titles):
         """Get Document title patterns from the lemmatized version."""
