@@ -55,7 +55,7 @@ def _map_titles_to_abbreviations(titles, tp):
 
 
 def pdf_to_text(file_path: Path):
-    # pymupdf, fall back to OCR if now sucessfull
+    # pymupdf, fall back to OCR if not sucessfull
     doc = pymupdf.open(file_path)
 
     pages = [page.get_text() for page in doc]
