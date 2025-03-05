@@ -9,3 +9,5 @@ classla
 openai
 pyarrow
 spacy
+rapidfuzz
+python-dotenv

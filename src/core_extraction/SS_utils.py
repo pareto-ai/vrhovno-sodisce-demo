@@ -5,6 +5,8 @@ from openai import OpenAI
 from bs4 import BeautifulSoup
 from html_output import apply_styles, save_html_to_file
 
+api_key = ""
+client = OpenAI(api_key = api_key)
 
 prompt = """
 Tvoja naloga je iz priložene sodbe (označene z <sodba></sodba>) izluščiti jedro ter izrek.
