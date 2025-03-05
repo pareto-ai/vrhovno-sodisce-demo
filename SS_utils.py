@@ -1,5 +1,6 @@
 import json
-
+import re
+import rapidfuzz as rf
 from openai import OpenAI
 
 api_key = ""
@@ -60,52 +61,81 @@ def precision_recall_redundancy(extracted_text: str, ground_truth_text: str):
     }
 
 
-def process_files(files):
+def text_similarity(text, corpus):
+    chars_found = 0
+    total_length = 0
+    match_intervals = []
+    split = re.split(r'[,.]', text)
+    split = [x.strip() for x in split]
+    for piece in split:
+        total_length += len(piece)
+        match = rf.fuzz.partial_ratio_alignment(piece, corpus)
+        if match.score > 80:
+            chars_found += len(piece)
+            match_intervals.append((match.dest_start, match.dest_end))
+    # print(match_intervals)
+    values = []
+    for (a, b) in match_intervals:
+        values += list(range(a, b))
+    text_covered = len(set(values))
+
+    split_corpus = re.split(r'[,.]', corpus)
+    split_corpus = [x.strip() for x in split_corpus]
+    corpus_length = sum([len(c) for c in split_corpus])
+
+    if corpus_length == 0:
+        breakpoint()
+    recall = text_covered / corpus_length
+    precision = chars_found / total_length
+    return precision, recall
+
+
+def process_files(examples: list[dict]):
     # Uporabil sem za 10 datotek, ki so imela verbatim jedro v besedilo
-    results = [] 
-    for file in files:
-        with open(file, "r", encoding="utf-8") as f:
-            print("Processing file:", file)
-            data = json.load(f)
-            
-            izrek = data.get("content", {}).get("izrek", "")
-            obrazlozitev = data.get("content", {}).get("obrazložitev", "")
-            jedro = data.get("content", {}).get("jedro", "")
-            
-            input = "<sodba>" + izrek + obrazlozitev + "</sodba>"
-            gpt_result = json.loads(call_gpt_json(prompt, input))
-            gpt_jedro = gpt_result['jedro']
-            gpt_izrek = gpt_result['izrek']
-            
-            
-            izrek_results = precision_recall_redundancy(gpt_izrek, izrek)
-            jedro_results = precision_recall_redundancy(gpt_jedro, jedro)
-            
-            izrek_verbatim_results = precision_recall_redundancy(gpt_izrek, input)
-            jedro_verbatim_results = precision_recall_redundancy(gpt_jedro, input)
-            
-            
-            results_dict = {
-                "original": {
-                    "izrek": izrek,
-                    "obrazlozitev": obrazlozitev,
-                    "jedro": jedro
-                },
-                "gpt_result": {
-                    "gpt_izrek": gpt_izrek,
-                    "gpt_jedro": gpt_jedro
-                },
-                "evaluation": {
-                    "izrek_results": izrek_results,
-                    "jedro_results": jedro_results
-                },
-                "evaluation_verbatim":{
-                    "izrek_verbatim": izrek_verbatim_results,
-                    "jedro_verbatim": jedro_verbatim_results,
-                }
-            }        
-            results.append(results_dict)
+    results = []
+    for data in examples:
+        izrek = data.get("izrek", "")
+        obrazlozitev = data.get("obrazložitev", "")
+        jedro = data.get("jedro", "")
+
+        input = "<sodba>" + izrek + obrazlozitev + "</sodba>"
+        gpt_result = json.loads(call_gpt_json(prompt, input))
+        gpt_jedro = gpt_result['jedro']
+        gpt_izrek = gpt_result['izrek']
+
+        izrek_results = text_similarity(gpt_izrek, izrek)
+        jedro_results = text_similarity(gpt_jedro, jedro)
+
+        izrek_verbatim_results = text_similarity(gpt_izrek, input)
+        jedro_verbatim_results = text_similarity(gpt_jedro, input)
+
+
+        results_dict = {
+            "original": {
+                "izrek": izrek,
+                "obrazlozitev": obrazlozitev,
+                "jedro": jedro
+            },
+            "gpt_result": {
+                "gpt_izrek": gpt_izrek,
+                "gpt_jedro": gpt_jedro
+            },
+            "evaluation": {
+                "izrek_results": izrek_results,
+                "jedro_results": jedro_results
+            },
+            "evaluation_verbatim":{
+                "izrek_verbatim": izrek_verbatim_results,
+                "jedro_verbatim": jedro_verbatim_results,
+            }
+        }
+        results.append(results_dict)
 
         
     with open('results.json', 'w') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
+
+if __name__ == "__main__":
+    with open("./data/datasets/sample_test_verbatim.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    process_files(data)
