@@ -35,26 +35,51 @@ def apply_styles(text, red_spans, underline_spans):
     return ''.join(styled_text)
 
 
-def save_html_to_file(html_content, filename="output.html"):
-    # Define a CSS style for better readability
+def save_html_to_file(main_text, right_texts, filename="output.html"):
+    """
+    Saves structured HTML with two columns:
+    - Left column: Main text
+    - Right column: Three distinct text blocks
+
+    Parameters:
+        main_text (str): The main body text (left column).
+        right_texts (list of str): Three texts for the right column.
+        filename (str): Name of the output file.
+    """
+
+    # Define a CSS style for proper layout
     css_styles = """
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 1500px;
             margin: 40px auto;
             padding: 20px;
             line-height: 1.6;
             background-color: #f4f4f4;
         }
-        p {
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .left-column {
+            flex: 1.2;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        span {
-            font-weight: bold;
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .right-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
     """
@@ -63,11 +88,20 @@ def save_html_to_file(html_content, filename="output.html"):
     full_html = f"""
     <html>
     <head>
-        <title>Styled Text</title>
+        <title>Styled Layout</title>
         {css_styles}
     </head>
     <body>
-        <p>{html_content}</p>
+        <div class="container">
+            <div class="left-column">
+                <p>{main_text}</p>
+            </div>
+            <div class="right-column">
+                <div class="right-box"><p>{right_texts[0]}</p></div>
+                <div class="right-box"><p>{right_texts[1]}</p></div>
+                <div class="right-box"><p>{right_texts[2]}</p></div>
+            </div>
+        </div>
     </body>
     </html>
     """
@@ -80,8 +114,6 @@ def save_html_to_file(html_content, filename="output.html"):
         file.write(soup.prettify())
 
     print(f"HTML saved successfully to {filename}")
-
-
 
 
 

@@ -2,6 +2,8 @@ import json
 import re
 import rapidfuzz as rf
 from openai import OpenAI
+from bs4 import BeautifulSoup
+from html_output import apply_styles, save_html_to_file
 
 api_key = ""
 client = OpenAI(api_key = api_key)
@@ -62,6 +64,8 @@ def precision_recall_redundancy(extracted_text: str, ground_truth_text: str):
 
 
 def text_similarity(text, corpus):
+    if len(text) >= len(corpus):
+        corpus += " " * (len(text) - len(corpus) + 1)
     chars_found = 0
     total_length = 0
     match_intervals = []
@@ -87,13 +91,13 @@ def text_similarity(text, corpus):
         breakpoint()
     recall = text_covered / corpus_length
     precision = chars_found / total_length
-    return precision, recall
+    return precision, recall, match_intervals
 
 
 def process_files(examples: list[dict]):
     # Uporabil sem za 10 datotek, ki so imela verbatim jedro v besedilo
     results = []
-    for i, data in enumerate(examples):
+    for i, data in list(enumerate(examples))[:4]:
         print(i)
         izrek = data.get("izrek", "")
         obrazlozitev = data.get("obrazložitev", "")
@@ -104,12 +108,19 @@ def process_files(examples: list[dict]):
         gpt_jedro = gpt_result['jedro']
         gpt_izrek = gpt_result['izrek']
 
+        izrek_gt_results = text_similarity(izrek, input)
+        jedro_gt_results = text_similarity(jedro, input)
+
         izrek_results = text_similarity(gpt_izrek, izrek)
         jedro_results = text_similarity(gpt_jedro, jedro)
 
         izrek_verbatim_results = text_similarity(gpt_izrek, input)
         jedro_verbatim_results = text_similarity(gpt_jedro, input)
 
+        html_output = apply_styles(input, jedro_verbatim_results[2], jedro_gt_results[2])
+        save_html_to_file(html_output,
+                          [jedro, gpt_jedro, "Precision: {:.2f}, Recall: {:.2f}".format(jedro_results[0], jedro_results[1])],
+                          f"./htmls/example_{i}.html")
 
         results_dict = {
             "original": {
@@ -122,12 +133,12 @@ def process_files(examples: list[dict]):
                 "gpt_jedro": gpt_jedro
             },
             "evaluation": {
-                "izrek_results": izrek_results,
-                "jedro_results": jedro_results
+                "izrek_results": izrek_results[:2],
+                "jedro_results": jedro_results[:2],
             },
             "evaluation_verbatim":{
-                "izrek_verbatim": izrek_verbatim_results,
-                "jedro_verbatim": jedro_verbatim_results,
+                "izrek_verbatim": izrek_verbatim_results[:2],
+                "jedro_verbatim": jedro_verbatim_results[:2],
             }
         }
         results.append(results_dict)
