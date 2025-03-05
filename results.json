@@ -1,0 +1,352 @@
+[
+    {
+        "original": {
+            "izrek": "",
+            "obrazlozitev": "Revizija se zavrže.\n\nOBRAZLOŽITEV:\n\n1. Sodišče prve stopnje je razvezalo zakonsko zvezo pravdnih strank, dodelilo njuna mladoletna otroka S. in K. materi – tožnici, tožencu pa naložilo od 1. 8. 2008 dalje plačevati 350 EUR oziroma 330 EUR preživnine mesečno. Za mesec julij 2008 je to obveznost določilo v višini 224 EUR oziroma 184 EUR. Višji preživninski znesek je zavrnilo in odločilo, da vsaka pravdna stranka nosi svoje pravdne stroške.\n\n2. Sodišče druge stopnje je pritožbo toženca zavrnilo in potrdilo sodbo sodišča prve stopnje.\n\nNavedbe revidenta\n\n3. Zoper sodbo sodišča druge stopnje v delu določitve preživnine za vsakega od obeh mladoletnih otrok nad 100 EUR mesečno je toženec vložil revizijo iz razloga bistvenih kršitev določb pravdnega postopka in zmotne uporabe materialnega prava. Takšna preživninska obveznost je po njegovem mnenju v nasprotju z ZZZDR in ne upošteva mednarodne konvencije o dvojnem obdavčevanju. Delavci, zaposleni v tujini in roditelji skupnih otrok iz zakonske zveze v času, ko so razvezani, niso več upravičeni do otroškega dodatka, saj dobijo status samske osebe, njihove davčne obveznosti pa so višje, kakor v času, ko imajo status zakonca. Sodišči sta zmotno ugotovili višino dohodkov toženca, kar revident dodatno utemelji. Tudi zaključek sodišča, da tožnica ni dolžna ničesar prispevati za skupne stroške bivanja oziroma le v sorazmernem delu, je v nasprotju z izvedenimi dokazi v spisu. Poleg tega prejema tožnica tudi varstveni dodatek za nego in oskrbo svoje matere, česar sodišče ni upoštevalo. Bistveno kršitev določb pravdnega postopka vidi revident tudi v tem, da je sodišče glede pridobitne sposobnosti tožnice prišlo do zaključkov, ki so v nasprotju z izvedenimi dokazi in izpovedbo toženca. Predlaga, da revizijsko sodišče sodbi sodišč druge in prve stopnje razveljavi in vrne zadevo v ponovno odločanje. \n\n4. Sodišče je revizijo vročilo nasprotni stranki, ki nanjo ni odgovorila, ter Vrhovnemu državnemu tožilstvu Republike Slovenije.\n\n5. Revizija ni dovoljena.\n\n6. V skladu z drugim odstavkom 10.a člena Zakona o zakonski zvezi in družinskih razmerjih o zadevah iz tega zakona sodišče odloča v pravdnem postopku, če z zakonom ni določeno, da odloča v nepravdnem postopku.\n\n7. Dne 1. oktobra 2008 je začela veljati novela ZPP (Uradni list RS, št. 45/2008; v nadaljevanju: ZPP-D), s katero so bile bistveno spremenjene določbe o reviziji. V drugem odstavku 367. člen ZPP je določeno, da je revizija dovoljena, če vrednost izpodbijanega dela pravnomočne sodbe presega 40.000 eurov. Če te vrednosti ne presega, je revizija dovoljena le, če jo v skladu s 367.a členom dopusti sodišče (tretji odstavek istega člena).\n\n8. Četrti odstavek 367. člena ZPP določa način ugotovitve vrednosti izpodbijanega dela pravnomočne sodbe, pri čemer sodišče ne upošteva določbe drugega odstavka 41. člena tega zakona (objektivne in subjektivne kumulacije tožbenih zahtevkov). Toženec izpodbija odločitev sodišča, kolikor je le-to določilo njegovo preživninsko obveznost nad zneskom 100 EUR za vsakega od otrok. To pomeni, da izpodbija znesek v vrednosti 480 EUR mesečno (250 EUR za hčerko S. in 230 EUR za sina K.). Upoštevaje določbo 40. člena ZPP znaša vrednost izpodbijanega dela pravnomočne sodbe, tudi če se zneska seštejeta, 25.800 EUR. \n\n9. Iz prvega in drugega odstavka 130. člena ZPP-D izhaja, da se v primeru, če je po uveljavitvi tega zakona (1. 10. 2008) izdana odločba na prvi stopnji, v postopku uporabljajo določbe ZPP-D. Sodišče prve stopnje je odločbo izdalo 21. 11. 2008, torej po začetku veljavnosti ZPP-D. Ker vrednost izpodbijanega dela pravnomočne sodbe ne presega 40.000 EUR, revident pa ni vložil niti ustreznega predloga za dopustitev revizije, je Vrhovno sodišče na podlagi 377. člena ZPP revizijo zavrglo.",
+            "jedro": "Upoštevaje določbo 40. člena ZPP znaša vrednost izpodbijanega dela pravnomočne sodbe, tudi če se zneska seštejeta, 25.800 EUR."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Revizija se zavrže.",
+            "gpt_jedro": "Ker vrednost izpodbijanega dela pravnomočne sodbe ne presega 40.000 EUR, revident pa ni vložil niti ustreznega predloga za dopustitev revizije, je Vrhovno sodišče na podlagi 377. člena ZPP revizijo zavrglo."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 0.0,
+                "recall": 0,
+                "redundancy_ratio": 0
+            },
+            "jedro_results": {
+                "precision": 0.2,
+                "recall": 0.3333333333333333,
+                "redundancy_ratio": 1.6666666666666667
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.00819672131147541,
+                "redundancy_ratio": 0.00819672131147541
+            },
+            "jedro_verbatim": {
+                "precision": 0.9666666666666667,
+                "recall": 0.07923497267759563,
+                "redundancy_ratio": 0.08196721311475409
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Predlog se zavrže.",
+            "obrazlozitev": "1. Sodišče prve stopnje je s sklepom (1) zavrglo tožbo v delu, v katerem se nanaša na ugotovitev motenja v posesti parcele 239/1 k. o. ... (I. točka izreka), (2) ustavilo postopek v delu, v katerem se nanaša na odstranitev drv in vej z navedene parcele (II. točka izreka), (3) zavrnilo zahtevek, po katerem se tožencu prepoveduje v bodoče s takšnimi ali podobnimi motilnimi dejanji posegati v tožničino posest navedene parcele in se mu za primer ponovitve motenja izreče denarna kazen v višini 5.000 EUR (III. točka izreka) in (4) tožnici naložilo povrnitev toženčevih stroškov postopka (IV. točka izreka).\n\n2. Sodišče druge stopnje je zavrnilo pritožbo tožnice in potrdilo sklep sodišča prve stopnje. Odločilo je tudi o pritožbenih stroških.\n\n3. Zoper sklep sodišča druge stopnje je tožnica vložila predlog za dopustitev revizije glede treh vprašanj, katerih pomembnost utemeljuje z zagotovitvijo pravne varnosti in enotne uporabe prava in njegovega razvoja preko sodne prakse.\n\n4. Predlog ni dovoljen.\n\n5. V predmetni zadevi gre za pravdo zaradi motenja posesti. Zakon o pravdnem postopku1 (v nadaljevanju ZPP) v četrtem odstavku 428. člena določa, da zoper sklep, izdan v pravdi zaradi motenja posesti, revizije ni. Če zakon določa, da revizije ni, sodišče revizije ne more dopustiti (drugi odstavek 367. člena ZPP). Vrhovno sodišče je zato nedovoljen predlog za dopustitev revizije na podlagi 377. člena v zvezi s četrtim odstavkom 428. člena ZPP zavrglo.\n\n6. Vrhovno sodišče je odločalo v senatu, ki je naveden v uvodu odločbe. Odločitev je sprejelo soglasno (sedmi odstavek 324. člena ZPP).",
+            "jedro": "Predlog se zavrže."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Predlog se zavrže.",
+            "gpt_jedro": "Zakon o pravdnem postopku v četrtem odstavku 428. člena določa, da zoper sklep, izdan v pravdi zaradi motenja posesti, revizije ni. Če zakon določa, da revizije ni, sodišče revizije ne more dopustiti (drugi odstavek 367. člena ZPP). Vrhovno sodišče je zato nedovoljen predlog za dopustitev revizije na podlagi 377. člena v zvezi s četrtim odstavkom 428. člena ZPP zavrglo."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "redundancy_ratio": 15.666666666666666
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.017045454545454544,
+                "redundancy_ratio": 0.017045454545454544
+            },
+            "jedro_verbatim": {
+                "precision": 0.9787234042553191,
+                "recall": 0.26136363636363635,
+                "redundancy_ratio": 0.26704545454545453
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Predlog se zavrne.",
+            "obrazlozitev": "1. Tožnik je od toženke zahteval plačilo odškodnine v vrednosti najemnin, ki bi jih toženka morala poravnati, v kolikor najemne pogodbe ne bi neupravičeno predčasno odpovedala. Po delnem umiku je zahtevan znesek znašal skupno 38.213,72 EUR.\n\n2. Sodišče prve stopnje je tožbeni zahtevek tožnika zavrnilo in mu naložilo plačilo stroškov pravdnega postopka.\n\n3. Sodišče druge stopnje je z vmesno sodbo pritožbi tožnika ugodilo in prvostopenjsko sodbo spremenilo tako, da je odločilo, da je tožbeni zahtevek po podlagi utemeljen, glede višine tožbenega zahtevka pa je izpodbijano sodbo razveljavilo in zadevo v tem obsegu vrnilo sodišču prve stopnje v ponovno sojenje. Odločitev o stroških pritožbenega postopka je pridržalo za končno odločbo.\n\n4. Zoper sodbo sodišča druge stopnje je toženec vložil predlog za dopustitev revizije, v katerem zatrjuje zmotno uporabo materialnega prava in bistvene kršitve pravil pravdnega postopka. Dopustitev revizije predlaga glede vprašanj:\n\n- Ali so bili v konkretnem primeru izpolnjeni pogoji za spremembo odločitve sodišča prve stopnje, s strani višjega sodišča, na podlagi ugotovljenega diametralno drugačnega dejanskega stanja, pri čemer je višje sodišče svojo razlago oprlo na drugačno materialnopravno podlago kot sodišče prve stopnje?\n\n- Ali je višje sodišče s tem, ko je na pritožbeni obravnavi izvedlo le nekatere (ne pa vseh) izmed pravno pomembnih dokazov in sprejelo diametralno drugačno odločitev od sodišča prve stopnje (spremenilo dejansko stanje), kršilo načelo ustnosti in neposrednosti ter načelo kontradiktornosti pri izvedbi dokazov ter je toženi stranki odreklo pravico do pritožbe?\n\n- Ali je višje sodišče s tem, ko je na pritožbeni obravnavi izvedlo le nekatere (ne pa vseh) izmed pravno pomembnih dokazov, pri čemer je navedene dokaze ocenilo diametralno drugače kot sodišče prve stopnje in dokazna ocena višjega sodišča ni bila vestna, skrbna, razumna, dosledna ter analitično-sintetična ter so dejanske ugotovitve višjega sodišča tako očitno napačne, da bi bila lahko podana kršitev sodniške samovolje oziroma arbitrarnosti, kršilo načelo proste presoje dokazov?\n\n5. Predlog ni utemeljen.\n\n6. Ker niso izpolnjeni pogoji, ki jih za dopustitev revizije določa prvi odstavek 367.a člena Zakona o pravdnem postopku (v nadaljevanju ZPP), je Vrhovno sodišče zavrnilo predlog v skladu z drugim odstavkom 367.c člena ZPP.\n\n7. Vrhovno sodišče je odločilo v senatu, navedenem v uvodu sklepa. Odločbo je sprejelo soglasno (sedmi odstavek 324. člena ZPP).",
+            "jedro": "Predlog se zavrne."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Predlog se zavrne.",
+            "gpt_jedro": "Ker niso izpolnjeni pogoji, ki jih za dopustitev revizije določa prvi odstavek 367.a člena Zakona o pravdnem postopku (v nadaljevanju ZPP), je Vrhovno sodišče zavrnilo predlog v skladu z drugim odstavkom 367.c člena ZPP."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "redundancy_ratio": 11.0
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.012658227848101266,
+                "redundancy_ratio": 0.012658227848101266
+            },
+            "jedro_verbatim": {
+                "precision": 1.0,
+                "recall": 0.13924050632911392,
+                "redundancy_ratio": 0.13924050632911392
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Revizija se zavrže.",
+            "obrazlozitev": "Sodišče prve stopnje je s sklepom ugotovilo obseg zapuščine, ki je ostala po pok. I. Š., vrednost socialne pomoči, ki jo je zapustnik prejemal od Centra za socialno delo in ki znaša 2.683.809,82 SIT, ter odločilo, da postane zapuščina v vrednosti dane socialne pomoči in ki jo predstavljajo nepremičnine s parc. št. 1590 in 1594, 1729, 96 in 558 ter 1758, 218, 569, 853, 477, 1957, 1976/4, 1272, 320, 375/37, 1193, 1436 in 1559, vse k.o. S., last Sklada kmetijskih zemljišč in gozdov Republike Slovenije, ki mora plačati Občini P., ki je zapustniku dajala socialno pomoč, vrednost socialne pomoči v znesku 2.683.809,82 SIT.\n\nZ izpodbijanim pravnomočnim sklepom je sodišče druge stopnje pritožbi Republike Slovenije delno ugodilo in sklep sodišča prve stopnje v drugem odstavku točke B in v prvi alinei točke C tako spremenilo, da je iz zapuščine izločeno premoženje dodelilo v last Republiki Sloveniji in ne Skladu kmetijskih zemljišč in gozdov Republike Slovenije, kot je odločilo sodišče prve stopnje. V ostalem je pritožbo kot neutemeljeno zavrnilo in v nespremenjenem delu potrdilo sklep sodišča prve stopnje.\n\nProti sklepu sodišča druge stopnuje je vložila pravočasno revizijo Republika Slovenija in v njej uveljavljala revizijski razlog zmotne uporabe materialnega prava. Sodišči prve in druge stopnje sta zmotno uporabili določbo 128.člena zakona o dedovanju ter določbe zakona o socialnem varstvu. Po zakonu o socialnem varstvu je potrebno sredstva, ki so bila dana kot denarna pomoč upravičencem, šteti za državna sredstva, tedaj za sredstva Republike Slovenije. Zato je le Republika Slovenija upravičena do dela premoženja osebe, ki je prejemala socialno pomoč. Republika Slovenija je na področju socialno varstvene dejavnosti vstopila v vse pravice in obveznosti nekdanjih občin. Zato Občini P. ni dolžna povrniti zneska v višini 2.683.809,82 SIT, kolikor znaša na dan 1.7.1994 valorizirana denarna pomoč, ki jo je prejemal pok. I. Š.. Reviziji naj se zato ugodi, sklepa sodišč druge in prve stopnje pa tako spremenita, da Republiki Sloveniji ne bo potrebno povrniti Občini P. zneska 2.683.809,82 SIT.\n\nRevizija ni dovoljena.\n\nIzpodbijani sklep je kot del sklepa o dedovanju izdalo sodišče v zapuščinskem postopku, v katerem se med drugim ugotavlja, katero premoženje sestavlja zapuščino (162. člen zakona o dedovanju - ZD) in kar je tudi predmet izpodbijanega sklepa. Dedovanje se lahko omeji do vrednosti prejete socialne ali druge pomoči (prvi odstavek 128. člena ZD), odločitev o tem pa je del sklepa o dedovanju (četrti odstavek 214. člena ZD). Z izpodbijano odločbo je bilo torej odločeno ne le v okviru zapuščinskega postopka, marveč tudi o samem predmetu odločanja v takšnem postopku. Potemtakem ne gre za odločitev, ki ne bi sodila v ta postopek.\n\nOb opisani ugotovitvi pa se seveda pojavi vprašanje, ali je revizija dovoljena (drugi odstavek 389. člena in 392. člen ZPP). Odgovor na to vprašanje pa je negativen. V 163. členu ZD je res določeno, da se v zapuščinskem postopku uporabljajo določbe pravdnega postopka, če ni s tem zakonom (ZD) drugače določeno. Vendar pa subsidiarna uporaba ZPP v zapuščinskem postopku, kar zadeva revizijo, ne pride v poštev zaradi njene pravne narave, saj gre za izredno pravno sredstvo. ZPP ureja izredna pravna sredstva (v šestindvajsetem poglavju) tako, da ustrezajo tej vrsti postopka, kar velja tudi za revizijo (drugi odstavek 400. člena v zvezi z drugim in tretjim odstavkom 382. člena ZPP). Zapuščinski postopek pa sodi po svoji naravi v nepravdni postopek (drugi odstavek 1. člena zakona o nepravdnem postopku - ZNP), v tem postopku pa revizija načeloma ni dovoljena (34. člen ZNP) in ker je ZD, kot rečeno, niti ne omenja, se pokaže, da revizija v zapuščinskem postopku ni dovoljena.\n\nGre torej za revizijo, ki je bila vložena proti odločbi v postopku (zapuščinskem), v katerem ni dovoljena. Zato jo je revizijsko sodišče zavrglo (392. člen ZPP).",
+            "jedro": "Izpodbijani sklep je kot del sklepa o dedovanju izdalo sodišče v zapuščinskem postopku, v katerem se med drugim ugotavlja, katero premoženje sestavlja zapuščino (162. člen zakona o dedovanju - ZD) in kar je tudi predmet izpodbijanega sklepa. Dedovanje se lahko omeji do vrednosti prejete socialne ali druge pomoči (prvi odstavek 128. člena ZD), odločitev o tem pa je del sklepa o dedovanju (četrti odstavek 214. člena ZD). Z izpodbijano odločbo je bilo torej odločeno ne le v okviru zapuščinskega postopka, marveč tudi o samem predmetu odločanja v takšnem postopku. Potemtakem ne gre za odločitev, ki ne bi sodila v ta postopek.\n\nOb opisani ugotovitvi pa se seveda pojavi vprašanje, ali je revizija dovoljena (drugi odstavek 389. člena in 392. člen ZPP). Odgovor na to vprašanje pa je negativen. V 163. členu ZD je res določeno, da se v zapuščinskem postopku uporabljajo določbe pravdnega postopka, če ni s tem zakonom (ZD) drugače določeno. Vendar pa subsidiarna uporaba ZPP v zapuščinskem postopku, kar zadeva revizijo, ne pride v poštev zaradi njene pravne narave, saj gre za izredno pravno sredstvo. ZPP ureja izredna pravna sredstva (v šestindvajsetem poglavju) tako, da ustrezajo tej vrsti postopka, kar velja tudi za revizijo (drugi odstavek 400. člena v zvezi z drugim in tretjim odstavkom 382. člena ZPP). Zapuščinski postopek pa sodi po svoji naravi v nepravdni postopek (drugi odstavek 1. člena zakona o nepravdnem postopku - ZNP), v tem postopku pa revizija načeloma ni dovoljena (34. člen ZNP) in ker je ZD, kot rečeno, niti ne omenja, se pokaže, da revizija v zapuščinskem postopku ni dovoljena."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Revizija se zavrže.",
+            "gpt_jedro": "Revizija ni dovoljena. Zapuščinski postopek pa sodi po svoji naravi v nepravdni postopek (drugi odstavek 1. člena zakona o nepravdnem postopku - ZNP), v tem postopku pa revizija načeloma ni dovoljena (34. člen ZNP) in ker je ZD, kot rečeno, niti ne omenja, se pokaže, da revizija v zapuščinskem postopku ni dovoljena."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.9761904761904762,
+                "recall": 0.2411764705882353,
+                "redundancy_ratio": 0.24705882352941178
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.0084985835694051,
+                "redundancy_ratio": 0.0084985835694051
+            },
+            "jedro_verbatim": {
+                "precision": 1.0,
+                "recall": 0.11898016997167139,
+                "redundancy_ratio": 0.11898016997167139
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Predlog se zavrne.",
+            "obrazlozitev": "1. Sodišče prve stopnje je toženki naložilo, da je dolžna plačati tožniku 11.800,00 EUR z zakonskimi zamudnimi obrestmi od 31. 1. 2009 dalje do plačila, v presežku pa je tožbeni zahtevek zavrnilo. Sodišče je presodilo, da stopnice niso bile ustrezno vzdrževane, kot se to pričakuje od profesionalne osebe, ki se ukvarja z upravljanjem javnih površin. Menilo je, da je krivdna odgovornost stranskega intervenienta podana, tožniku pa ni mogoče očitati neskrbnosti pri hoji. Ugovor zastaranja glede zvišanega dela tožbenega zahtevka je zavrnilo. \n\n2. Sodišče druge stopnje je pritožbo stranskega intervenienta zavrnilo in sodbo sodišča prve stopnje potrdilo. Glede ugovora zastaranja za povišani del tožbenega zahtevka je obrazložilo, da je tožnik na podlagi svojega zdravstvenega stanja in medicinske dokumentacije le zvišal višino tožbenega zahtevka, ki pa je še vedno temeljil na povsem isti dejanski in pravni osnovi ter torej ni zahteval ničesar novega, kar bi predstavljalo naknadno objektivno kumulacijo zahtevkov, zato se materialnopravni učinki vložene tožbe, vključno s pretrganjem zastaranja (365. člen Obligacijskega zakonika, v nadaljevanju OZ), nanašajo tudi na povišano višino zahtevka.\n\n3. Zoper sodbo sodišča druge stopnje stranski intervenient vlaga predlog za dopustitev revizije, v katerem postavlja vprašanje, ali se z vložitvijo tožbe pretrga zastaranje tudi za zahtevek oziroma povišan del zahtevka, ki ga tožeča stranka poviša in postavi po izteku zastaralnega roka. Navaja, da glede navedenega vprašanja sodne prakse Vrhovnega sodišča ni, izpodbijana odločitev pa nasprotuje preostali sodni praksi višjih sodišč. Izpostavlja, da je bila ob uporabi drugega odstavka 184. člena Zakona o pravdnem postopku (v nadaljevanju ZPP) tožba v obravnavanem primeru s povečanjem obstoječega zahtevka spremenjena. Takšno je tudi stališče sodne prakse višjih sodišč (VSL I Cp 473/2013, VSM I Cp 736/2012, VSL II Cp 3728/2011 in VSL I Cp 1125/2010). Tožnik je s tožbo z dne 10. 2. 2010 zahteval iz naslova telesnih bolečin in nevšečnosti 3.000,00 EUR, strahu 500,00 EUR in zmanjšanja življenjske aktivnosti 1.000,00 EUR. S pripravljalno vlogo z dne 5. 2. 2015 pa je tožbeni zahtevek povečal, in sicer iz naslova telesnih bolečin in nevšečnosti na 10.000,00 EUR, strahu na 1.000,00 EUR in zmanjšanja življenjske aktivnosti na 6.000,00 EUR. Zdravljenje je bilo zaključeno 24. 3. 2009. Spremenjena tožba je bila torej vložena po poteku zastaralnega roka (prvi in drugi odstavek 352. člena OZ). Stranski intervenient je na naroku dne 21. 9. 2015 podal ugovor zastaranja glede povišanega zahtevka. Meni, da je zmotno stališče nižjih sodišč, da je zastaranje vezano na obveznost in ne na nominalni znesek, ki ga tožeča stranka uveljavlja za poravnavo obveznosti. Iz sodnih odločb Višjega sodišča v Ljubljani II Cp 3728/2011 in I Cp 1125/2010 izhaja, da je zastaranje odškodninske terjatve pretrgano z vložitvijo tožbe, vendar zgolj glede postavljenega zahtevka. Z zavrnitvijo ugovora zastaranja sta tako nižji sodišči storili absolutno bistveno kršitev določb pravdnega postopka in zmotno uporabili materialno pravo.\n\n4. Predlog ni utemeljen. \n\n5. Vrhovno sodišče dopusti revizijo, če je od njegove odločitve mogoče pričakovati odločitev o pravnem vprašanju, pomembnem za zagotovitev pravne varnosti, enotne uporabe prava ali za razvoj prava preko sodne prakse (prvi odstavek 367.a člena ZPP). Vrhovno sodišče je ugotovilo, da navedeni pogoji za dopustitev revizije niso podani, zato je predlog stranskega intervenienta zavrnilo (drugi odstavek 367.c člena ZPP).\n\n6. Predlagatelj zmotno meni, da glede postavljenega vprašanja sodne prakse Vrhovnega sodišča ni. Izpodbijani položaj se ujema s primerjanimi zadevami, ki jih je že obravnavano Vrhovno sodišče, saj je tožnik, kot to v predlogu navaja stranski intervenient, že v tožbi postavil zahtevke za plačilo odškodnine za vsako izmed oblik škode ter zanje podal tudi določno trditveno podlago. S povišanjem tožbenega zahtevka tako ni zahteval nekaj novega, poleg že obstoječega, temveč le v okviru istega historičnega dogodka in na isti dejanski podlagi zahteval izpolnitev iste odškodninske obveznosti v višjem znesku. Vrednost telesnega ali duševnega trpljenja in strahu ni določena s ceno, zato kriterij presoje ni zgolj nominalna rast cen, temveč jo določi sodišče. Njihovo zastaranje pa se veže na obveznost in ne na posamične preoblikovane zahtevke v okviru iste obveznosti.(1) \n\n----\n\n(1) \n\nPrimerjaj sodne odločbe Vrhovnega sodišča II Ips 204/2013 z dne 9. 7. 2015, II Ips 342/2014 z dne 22. 1. 2015, II Ips 919/2007 z dne 17. 9. 2009, II Ips 557/1998 z dne 22. 7. 1999, III Ips 57/1996 z dne 14. 11. 1996, II Ips 174/2001 z dne 15. 11. 2001 in pravno mnenje Vrhovnega sodišča Slovenije II Ips 120/81 z dne 3. 9. 1981.",
+            "jedro": "Predlagatelj zmotno meni, da glede postavljenega vprašanja sodne prakse Vrhovnega sodišča ni. Izpodbijani položaj se ujema s primerjanimi zadevami, ki jih je že obravnavano Vrhovno sodišče, saj je tožnik, kot to v predlogu navaja stranski intervenient, že v tožbi postavil zahtevke za plačilo odškodnine za vsako izmed oblik škode ter zanje podal tudi določno trditveno podlago. S povišanjem tožbenega zahtevka tako ni zahteval nekaj novega, poleg že obstoječega, temveč le v okviru istega historičnega dogodka in na isti dejanski podlagi zahteval izpolnitev iste odškodninske obveznosti v višjem znesku. Vrednost telesnega ali duševnega trpljenja in strahu ni določena s ceno, zato kriterij presoje ni zgolj nominalna rast cen, temveč jo določi sodišče. Njihovo zastaranje pa se veže na obveznost in ne na posamične preoblikovane zahtevke v okviru iste obveznosti."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Predlog se zavrne.",
+            "gpt_jedro": "Vrhovno sodišče je ugotovilo, da navedeni pogoji za dopustitev revizije niso podani, zato je predlog stranskega intervenienta zavrnilo (drugi odstavek 367.c člena ZPP). S povišanjem tožbenega zahtevka tako ni zahteval nekaj novega, poleg že obstoječega, temveč le v okviru istega historičnega dogodka in na isti dejanski podlagi zahteval izpolnitev iste odškodninske obveznosti v višjem znesku. Njihovo zastaranje pa se veže na obveznost in ne na posamične preoblikovane zahtevke v okviru iste obveznosti."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.7301587301587301,
+                "recall": 0.42990654205607476,
+                "redundancy_ratio": 0.5887850467289719
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.007142857142857143,
+                "redundancy_ratio": 0.007142857142857143
+            },
+            "jedro_verbatim": {
+                "precision": 1.0,
+                "recall": 0.15,
+                "redundancy_ratio": 0.15
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Predlog se zavrne.",
+            "obrazlozitev": "1. Sodišče prve stopnje je odločilo, da se otroka A. A. (roj. ...) in B. B. (roj. ...) zaupata v varstvo in vzgojo predlagatelju (očetu) in nasprotni udeleženki (materi) (točka I izreka); in da se stalno prebivališče otrok določi na vsakokratnem naslovu očeta, kar je tudi naslov za vročanje pošiljk (točka II izreka). B. B. preživi čas z materjo vsak drugi teden od ponedeljka po šoli do naslednjega ponedeljka zjutraj, A. A.j preživi čas z materjo vsak drugi teden ob torkih, sredah in četrtkih po šoli do 19.00 ure ter od petka po šoli do nedelje do 17.00 ure. A. A. ima samostojen stik z materjo tudi v tednu, ko B. B. preživlja čas z očetom, in sicer v sredo po šoli do 19.00 ure, preostali čas otroka preživita z očetom. Krajše šolske počitnice med letom, praznike in dela proste dneve otroka preživita s staršema izmenjaje. Poletne počitnice preživita otroka po 10 dni strnjeno z vsakim od staršev, v preostalem času velja redni režim stikov. V času, ko je otrok pri enem staršu, ga lahko drugi starš pokliče na telefon in opravi z njim krajši razgovor preko avdio oziroma video klica. Za preživljanje časa pri enem in drugem staršu velja, da se lahko dogovorita drugače glede na njune zmožnosti ter potrebe in koristi otrok (točka III izreka). Kar sta glede zaupanja otrok v varstvo in vzgojo ter stikov udeleženca zahtevala drugače, je zavrnilo (točka IV izreka).\n\n2. Sodišče druge stopnje je predlagateljevo pritožbo zavrnilo in v izpodbijanem delu (točke I, III in IV izreka) potrdilo sklep sodišča prve stopnje.\n\n3. Predlagatelj predlaga dopustitev revizije glede vprašanj, (1) ali ni sodišče v konkretnem primeru kršilo določbo četrtega odstavka 7. člena in 158. člen Družinskega zakonika (v nadaljevanju DZ), 410. člen Zakona o pravdnem postopku (v nadaljevanju ZPP) ter ravnalo v nasprotju s 56. členom Ustave, 6. členom Evropske Konvencije o uresničevanju otrokovih pravic, 12. členom Konvencije o otrokovih pravicah, odločitvijo Odbora ministrov Sveta Evrope v Priporočilih CM/Rec(2012)2 (56,57), ker ni upoštevalo mnenja otrok, od katerih je sin star že 14 let (roj. 1. 9. 2009), hči pa je stara 10 let (roj. 6. 3. 2013); in (2) ali ni sodišče v konkretnem primeru kršilo določbo četrtega odstavka 7. člena DZ in 243. člen ZPP ter načelo kontradiktornosti postopka in pravico do izjave iz 5., 289. in 302. člena ZPP ter neposrednosti postopka iz 4. člena ZPP, ker se pri izdaji ni oprlo na mnenje izvedenke, kolizijske skrbnice in CSD, ker jih je štelo za prestare, in je odločilo mimo njih in v nasprotju z njimi, ne da bi zahtevalo dopolnitev mnenja z zaslišanjem na glavni obravnavi.\n\n4. Predlog ni utemeljen.\n\n5. Pogoji za dopustitev revizije iz prvega odstavka 367.a člena ZPP niso podani, zato je Vrhovno sodišče predlagateljev predlog zavrnilo (drugi odstavek 367.c člena ZPP).\n\n6. Vrhovno sodišče je odločalo v senatu, navedenem v uvodu sklepa. Odločbo je sprejelo soglasno (sedmi odstavek 324. člena ZPP).",
+            "jedro": "Predlog se zavrne."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Predlog se zavrne.",
+            "gpt_jedro": "Pogoji za dopustitev revizije iz prvega odstavka 367.a člena ZPP niso podani, zato je Vrhovno sodišče predlagateljev predlog zavrnilo (drugi odstavek 367.c člena ZPP)."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "redundancy_ratio": 7.666666666666667
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.01020408163265306,
+                "redundancy_ratio": 0.01020408163265306
+            },
+            "jedro_verbatim": {
+                "precision": 1.0,
+                "recall": 0.0782312925170068,
+                "redundancy_ratio": 0.0782312925170068
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Reviziji se ugodi, sklep sodišča druge stopnje se razveljavi in se zadeva vrne temu sodišču v ponovno odločanje.",
+            "obrazlozitev": "Sodišče prve stopnje je s sodbo ugotovilo višino solastninskega deleža tožeče stranke na premoženju, navedenem v izreku sodbe. Odločilo je tudi o stroških postopka.\n\nProti sodbi sodišča druge stopnje je vložila tožena stranka pritožbo, ki pa jo je sodišče druge stopnje kot prepozno zavrglo.\n\nProti sklepu o zavrženju pritožbe je vložila tožena stranka pravočasno revizijo in v njej zatrjevala, da odločitev pritožbenega sodišča o nepravočasnosti pritožbe ni pravilna. Ugotovitev sodišča druge stopnje, da je bila pritožba vložena dne 31.8.1995, ni točna, saj tako iz podatkov spisa, kot tudi iz reviziji priloženega potrdila o sprejemu poštne pošiljke jasno izhaja, da je tožena stranka pritožbo vložila že dne 31.7.1995. Reviziji naj se zato ugodi, izpodbijani sklep sodišča druge stopnje pa razveljavi. Toženo stranko naj se oprosti plačila stroškov revizijskega postopka.\n\nRevizija je bila vročena nasprotni stranki, ki na revizijo ni odgovorila, ter Državnemu tožilstvu Republike Slovenije, ki se o njej ni izjavilo (390. in 400. čl. zakona o pravdnem postopku - ZPP). Revizija je utemeljena.\n\nZ revizijo se izpodbija sklep, s katerim je pritožbeno sodišče zavrglo vloženo pritožbo. Zato je revizija dovoljena (3. odst. 400.čl. ZPP). Je pa tudi utemeljena. Iz podatkov spisa (dohodnega zaznamka, ki ga je odtisnila sodna oseba na pritožbi, ki jo je vložila tožena stranka in pritožbi priložene ovojnice, v kateri je bila pritožba tožene stranke s priporočeno pošiljko oddana na pošto) namreč izhaja, da je tožena stranka pritožbo vložila priporočeno na pošto dne 31.7.1995 in ne šele dne 31.8.1995, kot je, v nasprotju s podatki , ki so bili v spisu, ugotovilo pritožbeno sodišče. Odločitev pritožbenega sodišča o nepravočasnosti pritožbe, ki temelji na protispisni ugotovitvi, da je bila pritožba vložena šele 31.8.1995, zato ni pravilna, revizija tožene stranke pa je utemeljena.\n\nTožena stranka povrnitve stroškov revizijskega postopka ni zahtevala, predlagala pa je, naj se jo plačila teh stroškov oprosti, saj niso nastali po njeni krivdi. Ker revizijski stroški niso bili zaznamovani, je izrek o teh stroških odpadel. O predlogu za oprostitev stroškov revizijskega postopka pa revizijsko sodišče ni odločalo, ker mora o tem predlogu odločiti sodišče prve stopnje (1. odst. 173.čl. ZPP).",
+            "jedro": "Z revizijo se izpodbija sklep, s katerim je pritožbeno sodišče zavrglo vloženo pritožbo. Zato je revizija dovoljena (3. odst. 400.čl. ZPP). Je pa tudi utemeljena. Iz podatkov spisa (dohodnega zaznamka, ki ga je odtisnila sodna oseba na pritožbi, ki jo je vložila tožena stranka in pritožbi priložene ovojnice, v kateri je bila pritožba tožene stranke s priporočeno pošiljko oddana na pošto) namreč izhaja, da je tožena stranka pritožbo vložila priporočeno na pošto dne 31.7.1995 in ne šele dne 31.8.1995, kot je, v nasprotju s podatki , ki so bili v spisu, ugotovilo pritožbeno sodišče. Odločitev pritožbenega sodišča o nepravočasnosti pritožbe, ki temelji na protispisni ugotovitvi, da je bila pritožba vložena šele 31.8.1995, zato ni pravilna, revizija tožene stranke pa je utemeljena."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Reviziji se ugodi, sklep sodišča druge stopnje se razveljavi in se zadeva vrne temu sodišču v ponovno odločanje.",
+            "gpt_jedro": "Iz podatkov spisa (dohodnega zaznamka, ki ga je odtisnila sodna oseba na pritožbi, ki jo je vložila tožena stranka in pritožbi priložene ovojnice, v kateri je bila pritožba tožene stranke s priporočeno pošiljko oddana na pošto) namreč izhaja, da je tožena stranka pritožbo vložila priporočeno na pošto dne 31.7.1995 in ne šele dne 31.8.1995, kot je, v nasprotju s podatki, ki so bili v spisu, ugotovilo pritožbeno sodišče. Odločitev pritožbenega sodišča o nepravočasnosti pritožbe, ki temelji na protispisni ugotovitvi, da je bila pritožba vložena šele 31.8.1995, zato ni pravilna, revizija tožene stranke pa je utemeljena."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.9852941176470589,
+                "recall": 0.7701149425287356,
+                "redundancy_ratio": 0.7816091954022989
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.07960199004975124,
+                "redundancy_ratio": 0.07960199004975124
+            },
+            "jedro_verbatim": {
+                "precision": 0.9852941176470589,
+                "recall": 0.3333333333333333,
+                "redundancy_ratio": 0.3383084577114428
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Predlog se zavrne.",
+            "obrazlozitev": "1. Zavarovanec tožene stranke (v nadaljevanju tožnenka) je povzročilo prometno nesrečo. Tožeča stranka (v nadaljevanju tožnik) je za nastalo škodo zahtevala 48.935 EUR. Stranki sta soglašali, da je 80% posledic na tožnikovem zdravju posledica škodnega dogodka, 20% pa posledica degenerativnih sprememb.\n\n2. Sodišče prve stopnje naložilo toženi stranki, da tožeči plača znesek 26.505,29 EUR. V presežku je zahtevek zavrnilo.\n\n3. Pritožbeno sodišče je znižalo prisojeno odškodnino na 6.275 EUR.\n\n4. Zoper takšno sodbo vlaga predlog za dopustitev revizije tožnik. Dopustitev revizije predlaga glede naslednjih vprašanj:\n\n– Ali je glede na izvedeniško mnenje Fakultete za izvedeniška mnenja torej Komisije za fakultetna izvedeniška mnenja glede na tudi dopolnitev mnenja, ko se ugotavljajo telesne bolečine, duševne bolečine zaradi strahu in duševne bolečine zaradi zmanjšanih življenjskih aktivnosti in ko je ugotovljeno, da je 50% glede trajnega zmanjšanja življenjskih aktivnosti pripisati škodnemu dogodku primerna dosojena odškodnina,\n\n– Ali sodišče II. stopnje kljub več izvedeniških mnenj v spisu, nenazadnje tudi Fakultetnemu mnenju izdelanem po komisiji, lahko v okviru pravnega standarda določi celo cca 75% nižjo odškodnino od sodišča I. stopnje,\n\n– Ali je v okviru materialnega prava dosojena odškodnina kot znižano po sodišču II. stopnje še pravično denarno zadoščenje, ali pa je pravično denarno zadoščenje odškodnina ki jo je dosodilo sodišče I. Stopnje.\n\n5. Predlog ni utemeljen.\n\n6. Vrhovno sodišče dopusti revizijo, če je od njegove odločitve mogoče pričakovati odločitev o pravnem vprašanju, pomembnem za zagotovitev pravne varnosti, enotne uporabe prava ali za razvoj prava prek sodne prakse (prvi odstavek 367.a člena Zakona o pravdnem postopku – ZPP). Vrhovno sodišče je predlog za dopustitev revizije soočilo s sodbama nižjih sodišč in ugotovilo, da v konkretni zadevi predlog tem merilom ne ustreza. Zato je vrhovno sodišče predlog zavrnilo (drugi odstavek 367.c člena ZPP).\n\n7. Vrhovno sodišče je odločalo v senatu, ki je naveden v uvodu odločbe. Odločitev je sprejelo soglasno (sedmi odstavek 324. člena ZPP).",
+            "jedro": "Predlog se zavrne."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Predlog se zavrne.",
+            "gpt_jedro": "Vrhovno sodišče dopusti revizijo, če je od njegove odločitve mogoče pričakovati odločitev o pravnem vprašanju, pomembnem za zagotovitev pravne varnosti, enotne uporabe prava ali za razvoj prava prek sodne prakse (prvi odstavek 367.a člena Zakona o pravdnem postopku – ZPP). Vrhovno sodišče je predlog za dopustitev revizije soočilo s sodbama nižjih sodišč in ugotovilo, da v konkretni zadevi predlog tem merilom ne ustreza. Zato je vrhovno sodišče predlog zavrnilo (drugi odstavek 367.c člena ZPP)."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "redundancy_ratio": 20.0
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 1.0,
+                "recall": 0.013888888888888888,
+                "redundancy_ratio": 0.013888888888888888
+            },
+            "jedro_verbatim": {
+                "precision": 1.0,
+                "recall": 0.2777777777777778,
+                "redundancy_ratio": 0.2777777777777778
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Ugotovi se, da predlog za dopustitev revizije nima pravnih učinkov.",
+            "obrazlozitev": "1. Sodišče prve stopnje je s sklepom zavrnilo predlagateljev ugovor zoper plačilni nalog N 17/2019 z dne 15. 6. 2022, s katerim mu je naložilo plačilo sodne takse za pritožbo v znesku 2.444,40 EUR (tč. I izreka izpodbijanega sklepa), zavrnilo njegov predlog za oprostitev plačila sodnih taks (tč. II izreka izpodbijanega sklepa), hkrati pa razveljavilo omenjeni plačilni nalog (tč. III izpodbijanega sklepa) in predlagatelju dovolilo obročno plačilo sodne takse za pritožbo (tč. IV izreka izpodbijanega sklepa). Predlagatelj se je zoper ta sklep pritožil, drugostopenjsko sodišče pa je pritožbi delno ugodilo in izpodbijani sklep spremenilo tako, da je ugovoru predlagatelja delno ugodilo in mu naložilo plačilo sodne takse v znesku 1.260,00 EUR, v preostalem delu pa je ugovor in pritožbo zavrnilo.\n\n2. Predlagatelj zoper navedeni sklep drugostopenjskega sodišča sam vlaga predlog za dopustitev revizije. V predlogu navaja, da je dne 9. 1. 2024 zaprosil za \"dodelitev brezplačnega odvetnika, ki bi zoper zgoraj navedene kriminalne sklepe Višjega sodišča v Ljubljani in sodišča iz Domžal vložil predlog za dovolitev revizije, vendar njegove odločitve oz. brezplačnega odvetnika še ni prejel, zato kot priučen sodni strokovnjak z znanjem povprečnega odvetnika na podlagi 14. člena Ustave RS sam vlaga predlog za dovolitev revizije\". Glede obrazložitve sam pojasni, da je slednja dejansko nepotrebna, saj je iz napadenih sklepov jasno razvidno, da so mu bile z zlorabo uradne moči kratene pravice iz 23. in 33. člena Ustave RS.\n\n3. Predlog nima pravnih učinkov.\n\n4. Iz izpodbijanega drugostopenjskega sklepa izhaja, da je predlagatelj odrasla oseba, ki je postavljena pod skrbništvo, ime skrbnice v predlogu navaja celo sam. V skladu z 295. členom Družinskega zakonika1 se šteje, da oseba, ki je postavljena pod skrbništvo, ne more samostojno opravljati nobenih pravnih poslov. Izrecne ureditve, kako torej ravnati v primeru, ko predlog za dopustitev revizije vloži oseba, ki je izgubila pravdno sposobnost, v Zakonu o pravdnem postopku (ZPP) ni. Slednji ureja primere prepoznih, nepopolnih in v smislu četrtega odstavka 343. člena ZPP nedovoljenih vlog, obravnavanega predloga pa mednje ni mogoče uvrstiti.\n\n5. Bistvo citirane ureditve postavitve odrasle osebe pod skrbništvo je v tem, da izjava volje takšne osebe ne more imeti nikakršnih pravnih posledic. ZPP zato v drugem odstavku 81. člena sodišču nalaga, da se takšni osebi postavi skrbnika, kar pa v obravnavani zadevi ni več potrebno, saj predlagatelj skrbnico že ima.2\n\n6. Upoštevaje navedeno je Vrhovno sodišče o tem pravnem dejstvu zato izdalo ugotovitveni sklep.",
+            "jedro": "Ugotovi se, da predlog za dopustitev revizije nima pravnih učinkov."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Ugotovi se, da predlog za dopustitev revizije nima pravnih učinkov.",
+            "gpt_jedro": "Bistvo citirane ureditve postavitve odrasle osebe pod skrbništvo je v tem, da izjava volje takšne osebe ne more imeti nikakršnih pravnih posledic. ZPP zato v drugem odstavku 81. člena sodišču nalaga, da se takšni osebi postavi skrbnika, kar pa v obravnavani zadevi ni več potrebno, saj predlagatelj skrbnico že ima."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.043478260869565216,
+                "recall": 0.2,
+                "redundancy_ratio": 4.6
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 0.9,
+                "recall": 0.03461538461538462,
+                "redundancy_ratio": 0.038461538461538464
+            },
+            "jedro_verbatim": {
+                "precision": 0.9782608695652174,
+                "recall": 0.17307692307692307,
+                "redundancy_ratio": 0.17692307692307693
+            }
+        }
+    },
+    {
+        "original": {
+            "izrek": "Predlogu se ugodi in se revizija dopusti glede vprašanja, ali je odločitev pritožbenega sodišča pravilna s stališča določbe 47. člena ZIL-1.",
+            "obrazlozitev": "1. Sodišče prve stopnje je razsodilo, da se zavrne tožbeni zahtevek, s katerim je tožnica od toženk zahtevala: 1) prenehanje uporabe znaka, besede in imena „ROCK“ pri opravljanju dejavnosti oddajanja radijskih programov toženk, ker da uporaba te besede predstavlja kršitev blagovnih znamk tožnice, ki so registrirane pri Uradu za industrijsko lastnino RS pod reg. št. 201471283 z dne 11. 6. 2015, reg. št. 201570147 z dne 3. 9. 2015, reg. št. 201670341 z dne 15. 12. 2016 in reg. št. 201670342 z dne 15. 12. 2016; 2) objavo sodbe v časopisu Delo in Dnevnik ter 3) plačilo pravdnih stroškov tožnice.\n\n2. Sodišče druge stopnje je zavrnilo pritožbo tožnice in izpodbijano sodbo potrdilo (I. točka izreka). Odločilo je, da tožnica sama krije svoje stroške pritožbenega postopka (II. točka izreka).\n\n3. Zoper sodbo sodišča druge stopnje vlaga tožnica predlog za dopustitev revizije.\n\n4. Revizijsko sodišče ugotavlja, da so izpolnjeni pogoji za dopustitev revizije iz prvega odstavka 367. a člena Zakona o pravdnem postopku glede vprašanja, opredeljenega v izreku sklepa. Revizijo je zato v tem obsegu dopustilo.",
+            "jedro": "Predlogu se ugodi in se revizija dopusti glede vprašanja, ali je odločitev pritožbenega sodišča pravilna s stališča določbe 47. člena ZIL-1."
+        },
+        "gpt_result": {
+            "gpt_izrek": "Predlogu se ugodi in se revizija dopusti glede vprašanja, ali je odločitev pritožbenega sodišča pravilna s stališča določbe 47. člena ZIL-1.",
+            "gpt_jedro": "Revizijsko sodišče ugotavlja, da so izpolnjeni pogoji za dopustitev revizije iz prvega odstavka 367. a člena Zakona o pravdnem postopku glede vprašanja, opredeljenega v izreku sklepa."
+        },
+        "evaluation": {
+            "izrek_results": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "redundancy_ratio": 1.0
+            },
+            "jedro_results": {
+                "precision": 0.11538461538461539,
+                "recall": 0.15,
+                "redundancy_ratio": 1.3
+            }
+        },
+        "evaluation_verbatim": {
+            "izrek_verbatim": {
+                "precision": 0.95,
+                "recall": 0.13286713286713286,
+                "redundancy_ratio": 0.13986013986013987
+            },
+            "jedro_verbatim": {
+                "precision": 1.0,
+                "recall": 0.18181818181818182,
+                "redundancy_ratio": 0.18181818181818182
+            }
+        }
+    }
+]
