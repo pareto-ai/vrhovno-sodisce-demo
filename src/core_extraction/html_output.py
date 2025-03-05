@@ -21,11 +21,11 @@ def apply_styles(text, red_spans, underline_spans):
 
             # Apply styles
             if is_red and is_underlined:
-                styled_text.append(f'<span style="color: red; text-decoration: underline;">{segment}</span>')
+                styled_text.append(f'<span style="color: green"><b>{segment}</b></span>')
             elif is_red:
-                styled_text.append(f'<span style="color: red;">{segment}</span>')
+                styled_text.append(f'<span style="color: blue;"><b>{segment}</b></span>')
             elif is_underlined:
-                styled_text.append(f'<span style="text-decoration: underline;">{segment}</span>')
+                styled_text.append(f'<span style="color: red"><b>{segment}</b></span>')
             else:
                 styled_text.append(segment)
 
