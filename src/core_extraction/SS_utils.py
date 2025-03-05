@@ -5,8 +5,6 @@ from openai import OpenAI
 from bs4 import BeautifulSoup
 from html_output import apply_styles, save_html_to_file
 
-api_key = ""
-client = OpenAI(api_key = api_key)
 
 prompt = """
 Tvoja naloga je iz priložene sodbe (označene z <sodba></sodba>) izluščiti jedro ter izrek.
@@ -94,10 +92,10 @@ def text_similarity(text, corpus):
     return precision, recall, match_intervals
 
 
-def process_files(examples: list[dict]):
-    # Uporabil sem za 10 datotek, ki so imela verbatim jedro v besedilo
+def process_files(examples: list[dict], result_filename: str):
+
     results = []
-    for i, data in list(enumerate(examples))[:4]:
+    for i, data in list(enumerate(examples)):
         print(i)
         izrek = data.get("izrek", "")
         obrazlozitev = data.get("obrazložitev", "")
@@ -144,10 +142,11 @@ def process_files(examples: list[dict]):
         results.append(results_dict)
 
     print(results)
-    with open('results.json', 'w', encoding='utf-8') as f:
+    with open(result_filename, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
+    result_filename = "results.json"
     with open("./data/datasets/sample_test_verbatim.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    process_files(data)
+    process_files(data, result_filename)
