@@ -2,8 +2,12 @@ import json
 import re
 import rapidfuzz as rf
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
 
-api_key = ""
+load_dotenv()
+
+api_key = os.environ["OPENAI_API_KEY"]
 client = OpenAI(api_key = api_key)
 
 prompt = """
@@ -90,8 +94,8 @@ def text_similarity(text, corpus):
     return precision, recall
 
 
-def process_files(examples: list[dict]):
-    # Uporabil sem za 10 datotek, ki so imela verbatim jedro v besedilo
+def process_files(examples: list[dict], result_filename: str):
+
     results = []
     for i, data in enumerate(examples):
         print(i)
@@ -133,10 +137,11 @@ def process_files(examples: list[dict]):
         results.append(results_dict)
 
     print(results)
-    with open('results.json', 'w', encoding='utf-8') as f:
+    with open(result_filename, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
+    result_filename = "results.json"
     with open("./data/datasets/sample_test_verbatim.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    process_files(data)
+    process_files(data, result_filename)
