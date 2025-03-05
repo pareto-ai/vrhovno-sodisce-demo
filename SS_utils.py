@@ -93,7 +93,8 @@ def text_similarity(text, corpus):
 def process_files(examples: list[dict]):
     # Uporabil sem za 10 datotek, ki so imela verbatim jedro v besedilo
     results = []
-    for data in examples:
+    for i, data in enumerate(examples):
+        print(i)
         izrek = data.get("izrek", "")
         obrazlozitev = data.get("obrazložitev", "")
         jedro = data.get("jedro", "")
@@ -131,8 +132,8 @@ def process_files(examples: list[dict]):
         }
         results.append(results_dict)
 
-        
-    with open('results.json', 'w') as f:
+    print(results)
+    with open('results.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
