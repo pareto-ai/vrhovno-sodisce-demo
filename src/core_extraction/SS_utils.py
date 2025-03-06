@@ -1,9 +1,8 @@
 import json
 import re
 import rapidfuzz as rf
-from openai import OpenAI
 from html_output import apply_styles, save_html_to_file
-from gpt_utils import call_gpt, call_gpt_json
+from gpt_utils import call_gpt_json
 
 prompt = """
 Tvoja naloga je iz priložene sodbe (označene z <sodba></sodba>) izluščiti jedro ter izrek.
