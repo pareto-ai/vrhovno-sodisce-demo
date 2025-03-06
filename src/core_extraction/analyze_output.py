@@ -28,7 +28,10 @@ def analyze_output(examples, output_dir):
         save_html_to_file(html_output,
                           [gpt_jedro, jedro, "Precision: {:.2f}, Recall: {:.2f}".format(precision, recall)],
                           path_to_output + f"/example_{i}.html")
-
+        precisions.append(precision)
+        recalls.append(recall)
+    print ("Average precision: ", sum(precisions)/len(precisions))
+    print ("Average recall: ", sum(recalls)/len(recalls))
 
 def overlap_statistics(intervals_gt, intervals_gpt):
     """
