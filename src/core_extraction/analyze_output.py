@@ -8,6 +8,8 @@ def analyze_output(examples, output_dir):
     Analyze the output of the extraction process and save the results to a file.
     """
     # Extract the results
+    precisions = []
+    recalls = []
     for i, data in list(enumerate(examples["results"])):
         gpt_jedro = data["gpt_result"]["gpt_jedro"]
         gpt_jedro_verbatim = data["gpt_result"]["gpt_verbatim"]
