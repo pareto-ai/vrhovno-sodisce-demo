@@ -2,11 +2,8 @@ import json
 import re
 import rapidfuzz as rf
 from openai import OpenAI
-from bs4 import BeautifulSoup
 from html_output import apply_styles, save_html_to_file
-
-api_key = ""
-client = OpenAI(api_key = api_key)
+from gpt_utils import call_gpt, call_gpt_json
 
 prompt = """
 Tvoja naloga je iz priložene sodbe (označene z <sodba></sodba>) izluščiti jedro ter izrek.
@@ -22,28 +19,6 @@ Pričakovan output je validen json:
 """
 
 
-def call_gpt(prompt: str, input_text: str, temperature=0.1) -> str:
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        temperature=temperature,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": input_text},
-        ],
-    )
-    return response.choices[0].message.content
-
-def call_gpt_json(prompt: str, input_text: str, temperature=0.1) -> str:
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        temperature=temperature,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": input_text},
-        ],
-        response_format={ "type": "json_object" }
-    )
-    return response.choices[0].message.content
 
 def precision_recall_redundancy(extracted_text: str, ground_truth_text: str):
     "Comparisons of substrings/words"

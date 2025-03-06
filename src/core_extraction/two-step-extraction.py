@@ -1,25 +1,8 @@
 import json
-from openai import OpenAI
-from dotenv import load_dotenv
 import os
-
-load_dotenv()
-
-api_key = os.environ["OPENAI_API_KEY"]
-client = OpenAI(api_key=api_key)
+from gpt_utils import call_gpt_json
 
 
-def call_gpt_json(prompt: str, input_text: str, temperature=0.1) -> str:
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        temperature=temperature,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": input_text},
-        ],
-        response_format={ "type": "json_object" }
-    )
-    return response.choices[0].message.content
 
 
 prompt_core = """Pripravi jedro sodbe Vrhovnega sodišča, ki obravnava revizijo v civilni zadevi. V spodnjem besedilu je zajeta daljša obrazložitev sodbe, ki jo želimo strnjeno povzeti. 
@@ -96,10 +79,10 @@ def process_files(examples: list[dict], result_filename: str):
         json.dump(adjusted_results, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
-    result_filename = "results_2step_core_verbatim.json"
-    with open("./data/datasets/sample_test_verbatim.json", "r", encoding="utf-8") as f:
+    result_filename = "results_2step_core_verbatim_2.json"
+    with open("data/datasets/sample_test_verbatim2.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    process_files(data[:10], result_filename)
+    process_files(data, result_filename)
 
 
 
