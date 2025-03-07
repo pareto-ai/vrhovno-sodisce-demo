@@ -133,6 +133,7 @@ def save_html_to_file(main_text, right_texts, filename="output.html"):
                 <div class="right-box"><div class="box-header">AI jedro</div><p>{right_texts[0]}</p></div>
                 <div class="right-box"><div class="box-header">Pravo jedro</div><p>{right_texts[1]}</p></div>
                 <div class="right-box"><div class="box-header">Metrike</div><p>{right_texts[2]}</p></div>
+                <div class="right-box"><div class="box-header">Zveza</div><p>{right_texts[3]}</p></div>
             </div>
         </div>
     </body>
