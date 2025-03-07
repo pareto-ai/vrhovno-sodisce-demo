@@ -189,14 +189,14 @@ def _create_eval_dataset():
     
     eval_dataset = create_eval_dataset(sample_data[:10])
     
-    eval_path = "data/datasets/eval_dataset.json"
+    eval_path = "data/evals/eval_dataset.json"
     with open(eval_path, "w", encoding="utf-8") as f:
         json.dump(eval_dataset, f, ensure_ascii=False, indent=4)
 
 
 def _evaluate_LLM_evaluator():
     
-    eval_path = "data/datasets/eval_dataset.json"
+    eval_path = "data/evals/eval_dataset.json"
     with open(eval_path, "r", encoding="utf-8") as f:
         eval_dataset =  json.load(f)
     
