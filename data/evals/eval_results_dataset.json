@@ -1,0 +1,205 @@
+{
+    "detailed_results": {
+        "original_vs_reworded": [
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            },
+            {
+                "identicno": true,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [],
+                    "jedro_2_manjkajoce_info": []
+                }
+            }
+        ],
+        "original_vs_expanded": [
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "vezanost na oprostilno sodbo skladna z ustavno varovano domnevo nedolžnosti"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Revizijsko sodišče je pojasnilo, da je vezanost na oprostilno sodbo skladna z ustavno varovano domnevo nedolžnosti, ki ni omejena le na kazenski postopek."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "objava popravka prispevka",
+                        "izrek sodbe sodišča prve stopnje"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Sodišče je odločilo, da druga toženka mora objaviti popravek prispevka v oddaji A, kot je določeno v izreku sodbe sodišča prve stopnje."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "nepremičnina pridobljena z darilom",
+                        "posebno premoženje zakonca"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Nepremičnina, pridobljena z darilom, ki je bila dana izključno enemu zakoncu, predstavlja posebno premoženje tega zakonca in ne skupno premoženje zakoncev."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "revizija ni dovoljena zoper sklepe, ki ne predstavljajo pravnomočnega zaključka",
+                        "384. člen ZPP",
+                        "37. člen ZNP",
+                        "36. člen ZSZ"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Revizija ni dovoljena zoper sklepe, ki ne predstavljajo pravnomočnega zaključka razlastitvenega postopka."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "predmet spora je plačilo storitev",
+                        "uporaba 48. člena Zakona o pravdnem postopku"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Predmet spora je plačilo opravljenih storitev oziroma povračilo stroškov na pogodbeni podlagi, zato se za določitev krajevne pristojnosti uporablja določba 48. člena Zakona o pravdnem postopku."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "toženec ni dokazal poravnave dolga",
+                        "povrnitev dolga tožeči stranki",
+                        "terjatev odstopljena tožeči stranki"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Sodišči sta pravilno uporabili materialno pravo, saj toženec ni dokazal, da je poravnal dolg podjetju L. d.o.o., zato mora povrniti dolg tožeči stranki, ki ji je bila terjatev odstopljena."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "sodišče druge stopnje zavrnilo pritožbo",
+                        "potrdilo sodbo prve stopnje"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Sodišče druge stopnje je zavrnilo pritožbo tožeče stranke in potrdilo sodbo sodišča prve stopnje v izpodbijanem zavrnilnem delu."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "tretji toženec vedel za prodajo in vselitev",
+                        "ni bil dobroverni pridobitelj"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Sodišče je ugotovilo, da je tretji toženec vedel, da je bilo stanovanje že prodano tožnikoma in da sta se tožnika vanj vselila, kar pomeni, da ni bil dobroverni pridobitelj, ki bi se lahko skliceval na načelo zaupanja v zemljiško knjigo."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "odločitev Vrhovnega sodišča",
+                        "razlogi za zavrnitev"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Vrhovno sodišče je zavrnilo predlog za dopustitev revizije, ker razlogi za dopustitev revizije iz prvega odstavka 367.a člena ZPP niso bili podani."
+            },
+            {
+                "identicno": false,
+                "razlike": {
+                    "jedro_1_manjkajoce_info": [
+                        "razlog zavrnitve",
+                        "sklicevanje na 367.a člen ZPP"
+                    ],
+                    "jedro_2_manjkajoce_info": []
+                },
+                "eval_added_info": "Predlagatelj ni izkazal izpolnjevanja zahtev za dopustitev revizije po prvem odstavku 367.a člena ZPP."
+            }
+        ],
+        "reworded_vs_expanded": []
+    },
+    "metrics": {
+        "original_vs_reworded": {
+            "total": 10,
+            "correct": 10,
+            "expected_identical": true,
+            "accuracy": 100.0
+        },
+        "original_vs_expanded": {
+            "total": 10,
+            "correct": 10,
+            "expected_identical": false,
+            "accuracy": 100.0
+        }
+    }
+}

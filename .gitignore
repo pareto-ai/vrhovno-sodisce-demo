@@ -1,7 +1,8 @@
 # Custom
 data/*
-!data/datasets/*
+!data/datasets/eval_dataset.json
 .vscode
+!data/evals
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
