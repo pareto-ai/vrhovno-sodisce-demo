@@ -1,53 +1,9 @@
 import json
-from openai import OpenAI
-from dotenv import load_dotenv
 import os
-import anthropic
-
-client_claude = anthropic.Anthropic(
-    api_key="",
-)
-
-load_dotenv()
-
-api_key = os.environ["OPENAI_API_KEY"]
-client = OpenAI(api_key=api_key)
+from gpt_utils import call_gpt_json
 
 
-def call_claude_json(prompt: str, input_text: str, temperature=0.1) -> str:
-    response = client_claude.messages.create(
-        model="claude-3-5-sonnet-latest",  # Use the latest Claude model available
-        temperature=temperature,
-        system=prompt,
-        max_tokens=2024,
-        messages=[{"role": "user", "content": input_text}],
-    )
-    return response.content[0].text
 
-def call_gpt_json(prompt: str, input_text: str, temperature=0.1) -> str:
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        temperature=temperature,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": input_text},
-        ],
-        response_format={ "type": "json_object" }
-    )
-    return response.choices[0].message.content
-
-def call_google(prompt: str, input_text: str) -> str:
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": input_text},
-        ],
-    )
-    response = client.models.generate_content(
-        model="gemini-2.0-flash", contents="Naredi jedro"
-    )
-    return response.choices[0].message.content
 
 prompt_core = """Pripravi jedro sodbe Vrhovnega sodišča, ki obravnava revizijo v civilni zadevi. V spodnjem besedilu je zajeta daljša obrazložitev sodbe, ki jo želimo strnjeno povzeti. 
 
@@ -123,10 +79,10 @@ def process_files(examples: list[dict], result_filename: str):
         json.dump(adjusted_results, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
-    result_filename = "results_2step_core_verbatim.json"
-    with open("./data/datasets/sample_test_verbatim.json", "r", encoding="utf-8") as f:
+    result_filename = "results_2step_core_verbatim_2.json"
+    with open("data/datasets/sample_test_verbatim2.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    process_files(data[:10], result_filename)
+    process_files(data, result_filename)
 
 
 
