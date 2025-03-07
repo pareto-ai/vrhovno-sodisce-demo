@@ -3,6 +3,7 @@ import os
 import json
 from SS_utils import text_similarity
 
+
 def analyze_output(examples, output_dir):
     """
     Analyze the output of the extraction process and save the results to a file.
@@ -15,6 +16,7 @@ def analyze_output(examples, output_dir):
         gpt_jedro_verbatim = data["gpt_result"]["gpt_verbatim"]
         jedro = data["original"]["jedro"]
         obrazlozitev = data["original"]["obrazlozitev"]
+        zveza = data.get("zveza", [])
 
         jedro_gt_results = text_similarity(jedro, obrazlozitev)
         jedro_results = text_similarity(". ".join(gpt_jedro_verbatim), obrazlozitev)
@@ -26,14 +28,16 @@ def analyze_output(examples, output_dir):
         gt_intervals = make_intervals_prettier(jedro_gt_results[2])
         precision, recall = overlap_statistics( gt_intervals,  gpt_intervals)
         print(f"Precision: {precision}, Recall: {recall}")
+        zveza_html = "<br />".join(zveza)
         html_output = apply_styles(obrazlozitev, gpt_intervals, gt_intervals)
         save_html_to_file(html_output,
-                          [gpt_jedro, jedro, "Precision: {:.2f}, Recall: {:.2f}".format(precision, recall)],
+                          [gpt_jedro, jedro, "Precision: {:.2f}, Recall: {:.2f}".format(precision, recall), zveza_html],
                           path_to_output + f"/example_{i}.html")
         precisions.append(precision)
         recalls.append(recall)
-    print ("Average precision: ", sum(precisions)/len(precisions))
-    print ("Average recall: ", sum(recalls)/len(recalls))
+    print("Average precision: ", sum(precisions)/len(precisions))
+    print("Average recall: ", sum(recalls)/len(recalls))
+
 
 def overlap_statistics(intervals_gt, intervals_gpt):
     """
@@ -53,7 +57,6 @@ def overlap_statistics(intervals_gt, intervals_gpt):
     return precision, recall
 
 
-
 def bruteforce_intersections(intervals_gt, intervals_gpt):
     gt_set = set()
     for (a,b) in intervals_gt:
@@ -65,8 +68,6 @@ def bruteforce_intersections(intervals_gt, intervals_gpt):
     chars_found = len(gpt_set)
     total_length = len(gt_set)
     return text_covered, chars_found, total_length
-
-
 
 
 def formal_intersections(intervals_gt, intervals_gpt):
@@ -111,8 +112,7 @@ def make_intervals_prettier(intervals):
     return intervals_final
 
 
-
 if __name__ == "__main__":
-    with open("./../../results/results_2step_core_verbatim.json", "r", encoding="utf-8") as f:
+    with open("./../../results/results_2step_core_verbatim_gemini.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    analyze_output(data, "2-step")
+    analyze_output(data, "gemini")
