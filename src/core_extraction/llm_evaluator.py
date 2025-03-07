@@ -163,9 +163,18 @@ def validate_llm_evaluator(eval_dataset):
         'metrics': metrics
     }
 
-def process_cores(data):
+
+
+
+def _LLM_compare_ground_truth_cores_to_gpt_cores():
     """Process and evaluate generated cores against original cores."""
-    for i, core_result in enumerate(data['results']):
+
+    
+    results_path = "results_2step_core_verbatim_2.json"
+    with open(results_path, "r", encoding="utf-8") as f:
+        results_data =  json.load(f)
+    
+    for i, core_result in enumerate(results_data['results']):
         print(f"Processing core {i+1}")
         
         jedro_gpt = core_result['gpt_result']['gpt_jedro']
@@ -178,8 +187,10 @@ def process_cores(data):
         
         core_result["LLM_eval_result"] = eval_result
     
-    return data
+    output_path = results_path.replace('.json', '_w_llm_evals.json')
 
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(results_data, f, ensure_ascii=False, indent=4)
 
 def _create_eval_dataset():
     
@@ -208,15 +219,4 @@ def _evaluate_LLM_evaluator():
 
 
 if __name__ == "__main__":
-    _evaluate_LLM_evaluator()
-
-    
-    # # Process and evaluate actuall data
-    # results_path = "results_2step_core_verbatim_2.json"
-    # with open(results_path, "r", encoding="utf-8") as f:
-    #     results_data =  json.load(f)
-    # processed_data = process_cores(results_data)
-    # output_path = results_path.replace('.json', '_w_llm_evals.json')
-
-    # with open(output_path, "w", encoding="utf-8") as f:
-    #     json.dump(processed_data, f, ensure_ascii=False, indent=4)
+    _LLM_compare_ground_truth_cores_to_gpt_cores()
